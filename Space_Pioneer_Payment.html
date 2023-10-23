@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Space Pioneer: Payment</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style> 
+
+a:link {color: white;} 
+a:visited {color: blue;} 
+a:hover {color: grey;} 
+a:active {color: black;}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.title {
+  position: fixed;
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+.content {
+  position: relative;
+  bottom: -300px;
+  color: #f1f1f1;
+  width: 100%;
+  height: 70%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: justify;
+  float: left;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+body {margin:0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-image: url(images/Bk.gif);
+}
+
+div.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+}
+
+</style>
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="videos/About_Video.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="title">
+  <br><br>
+  <center><img src="images/Logo.png" width="50px" height="50px" title="Space Pioneers">
+  <center><h1>Space Pioneer</h1></center>
+</div>
+
+<div class="content">
+  <form action="Action/Submitform.php" method="POST">
+        First Name: 
+        <br>
+        <input type="text" name="firstname" id="name" required="required"  placeholder="  First Name">
+        <br><br>
+        Last Name: 
+        <br>
+        <input type="text" name="lastname"  id="name" required="required"  placeholder="  Last Name">
+        <br><br>
+        Version:
+        <br>
+        <select>
+            <option value=" " >Select option</option>
+            <option value="Trotter-5">Trotter-5 - $1 million</option>
+            <option value="Trotter-6">Trotter-6 - $1.2 million</option>
+            <option value="Trotter-8">Trotter-8 - $2 million</option>
+        </select>
+        <br><br>
+        Total Weight of Passengers:
+        <br>
+        <input type="text" name="weight" required="required"  placeholder=" Total Weight of Passengers ">
+        <br><br>
+        Number of Passengers:
+        <br>
+        <input type="text" name="population" required="required"  placeholder=" Number of Passengers ">
+        <br><br>
+        Date of Launch:
+        <br>
+        <input type="date" name="date" required="required"  placeholder="  Date">
+        <br><br>
+        Card Number:
+        <br>
+        <input type="text" name="number" required="required"  placeholder="  Card Number">
+        <br><br>
+        Name on Back of Card:
+        <br>
+        <input type="text" name="name" required="required"  placeholder="  Name on Back of Card">
+        <br><br>
+        CVV:
+        <br>
+        <input type="text" name="CVV" required="required"  placeholder="  CVV">
+        <br><br>
+        Expiration Date:
+        <br>
+        <input type="text" name="Expiration" required="required"  placeholder=" Expiration Date">
+        <br><br>
+        Street Address:
+        <br>
+        <input type="text" name="Address" required="required"  placeholder="  Address">
+        <br><br>
+        Town/City:
+        <br>
+        <input type="text" name="Town/City" required="required"  placeholder="  Town/City">
+        <br><br>
+        State:
+        <br>
+        <input type="text" name="State" required="required"  placeholder="  State">
+        <br><br>
+        Email:
+        <br>
+        <input type="email" name="email" required="required" placeholder="  Email">
+        <br><br>
+        Phone Number:
+        <br>
+        <input type="text" name="number" required="required"  placeholder="  Phone Number">
+        <br><br>
+        Date of Birth:
+        <br>
+        <input type="text" name="birth" required="required"  placeholder="  DOB">
+        <br><br>
+        <input type="Submit" value="Submit" >
+    </form>
+	<center>
+	<div class="container">
+	<div class="row">
+	<br><br><br>
+    <div class="col-sm-6">
+      <h4 style="font-size:28px; font-family:verdana; font-weight:bold;">Contact Us</h4>
+                   
+<p style="font-size:16px;"> SpacePioneer Team
+    Building AH9 #27106<br> Shuttle Landing Facility
+    Kennedy Space Center
+    Florida, 
+  <br>
+    USA 32899
+  <br>
+    1-800-PIONEER
+  <br>
+    <a href="mailto:Email: info@spacepioneer.com">Email: info@spacepioneer.com </a>
+</p>
+  </div>     
+    <div class="col-sm-6 ">
+    <h4 style="font-size:28px; font-family:verdana; font-weight:bold;">Subscription</h4>
+      <div class="social">
+        <a href="https://Facebook.com"><i class=" " data-toggle="tooltip" data-placement="top" data-original-title="facebook"><img src="images/Facebook.png" height="2.5%" width="2.5%"></i></a> &nbsp; &nbsp; &nbsp;
+        <a href="https://Instagram.com"><i class=" "  data-toggle="tooltip" data-placement="top" data-original-title="instragram"><img src="images/Instagram.png" height="2.5%" width="2.5%"></i></a> &nbsp; &nbsp; &nbsp;
+        <a href="https://Twitter.com"><i class="fa fa-twitter-square" data-toggle="tooltip" data-placement="top" data-original-title="twitter"><img src="images/Twitter.png" height="2.5%" width="2.5%"></i></i></a> &nbsp; &nbsp; &nbsp;
+      </div>
+  </div>
+</div>
+</div>
+</center>
+<p>
+</p>
+<center>
+  <div class="text-center copyright">
+    <h3>
+      For the eyes of the world now look into space to the moon and to the planets beyond, and we have vowed that we shall not see it governed by a hostile flag of conquest, but by a banner of freedom and peace.
+    </h3>
+    <h4>
+      - John F. Kennedy
+    </h4>
+  </div>
+</center>
+</div>
+
+<ul>
+  <li><a href="Space_Pioneer_Basic_Information.html">About</a></li>
+  <li><a href="Space_Pioneer_The_Team.html">The Team</a></li>
+  <li><a href="Space_Pioneer_Vehicles.html">Vehicles</a></li>
+  <li><a href="Space_Pioneer_Becoming_An_Astronaut.html">Becoming An Astronaut</a></li>
+  <li><a href="Space_Pioneer_Costs.html">Costs</a></li>
+  <li><a href="Space_Pioneer_Payment.html">Payment</a></li>
+  <li><a href="Space_Pioneer_News.html">News</a></li>
+  <li><a href="Space_Pioneer_Citations.html">Paperwork</a></li>
+</ul>
+
+</body>
+</html>

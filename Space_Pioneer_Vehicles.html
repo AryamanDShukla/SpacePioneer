@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Space Pioneer: Vehicles</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+a:link {color: white;} 
+a:visited {color: rgb(39, 89, 255);} 
+a:hover {color: grey;} 
+a:active {color: black;}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 100%;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.title {
+  position: fixed;
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+.content {
+  position: relative;
+  bottom: -300px;
+  color: #f1f1f1;
+  width: 100%;
+  height: 65%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: justify;
+  float: left;
+}
+
+.content1 {
+  position: relative;
+  bottom: -300px;
+  color: #f1f1f1;
+  width: 33.33%;
+  height: 70%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: justify;
+}
+
+.content2 {
+  position: relative;
+  bottom: -300px;
+  color: #f1f1f1;
+  width: 33.33%;
+  height: 70%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: justify;
+}
+
+.content3 {
+  position: relative;
+  bottom: -300px;
+  color: #f1f1f1;
+  width: 33.33%;
+  height: 70%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: justify;
+}
+
+div {
+  float: left;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+body {margin:0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-image: url(images/Bk.gif);
+}
+
+div.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+}
+
+</style>
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="videos/About_Video.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="title">
+  <br><br>
+  <center><img src="images/Logo.png" width="50px" height="50px" title="Space Pioneers">
+  <center><h1>Space Pioneer</h1></center>
+</div>
+
+<div>
+  <div class="content" id="content">
+  <p>
+    Our spacecrafts come equipped with the advanced technology of field lasers to vaporize debris along the tracks of HVAC in all orbits. Reducing orbital debris in all orbits increases the safety of commercial human spaceflight in LEO, cislunar vehicles, and future human spaceflight missions to Mars and Beyond. Our space tourism services are offered in three bundles of varying luxury and capacity.
+  </p>
+</div>
+  
+<div class="content1" id="content1">
+  <img src="images/Trotter-5.png" width="85%" height=".95*width" title="Trotter-5">
+  <p>
+    <font size="3px">
+      <li> Wonderful weightlessness in space </li> <br>
+      <li> 5 with three floors and 360 viewing galleries </li> <br>
+      <li> Least expensive </li>
+    </font>
+  </p>
+  <br>
+  <p>
+    <font size="3px">
+      The Trotter - 5 Spaceship was developed to be the most reachable, most eco-friendly, and safest spacecraft on or above Planet Earth. It comprises the Space-Cube, Side Soft Descent System and the View Capsule. The capsule houses five explorers with a seamless 360 view point. Galleries blend with the life-style and beyond earth experience.  
+    </font>
+  </p>
+</div>
+
+<div class="content2" id="content2">
+  <img src="images/Trotter-6.png" width="85%" height=".95*width" title="Trotter-6">
+  <p>
+    <font size="3px">
+      <li> Similar to a private jet, with 6 living quarters </li> <br>
+      <li> Smooth sharp launch </li> <br>
+      <li> Smart viewing and cockpit windows </li>
+    </font>
+  </p>
+  <br>
+  <p>
+    <font size="3px">
+      The Trotter - 6 Spaceship was developed to be the most technology loaded, eco-friendly, and safe spacecraft on or above Planet Earth. It comprises the Space-slim, Side Sharp Ascent System and the View Capsule. The capsule indulges six explorers to a seamless 360 space-view through the luxury space SHARP life-style for an endless unforgettable experience.
+    </font>
+  </p>
+</div>
+  
+<div class="content3" id="content3">
+  <img src="images/Trotter-8.png" width="85%" height=".95*width" title="Trotter-8">
+  <p> 
+    <font size="3px">
+      <li> Luxurious arrangements and living quarters </li> <br>
+      <li> Two window ports per living quarter </li> <br>
+      <li> Space hatch for 360 viewing </li>
+    </font>
+  </p>
+  <br>
+  <p>
+    <font size="3px">
+      The Trotter - 8 Spaceship was developed to provide space exploration loaded experience. Most eco-friendly on or above Planet Earth, it comprises viewing from living space and an all-space observatory. Eight explorers view space through astronauts guided 360 view. Learn through pre-recorded options to gradually retire into the luxury of spacecraft space. 
+    </font>
+  </p>
+</div>
+</div>
+
+<ul>
+  <li><a href="Space_Pioneer_Basic_Information.html">About</a></li>
+  <li><a href="Space_Pioneer_The_Team.html">The Team</a></li>
+  <li><a href="Space_Pioneer_Vehicles.html">Vehicles</a></li>
+  <li><a href="Space_Pioneer_Becoming_An_Astronaut.html">Becoming An Astronaut</a></li>
+  <li><a href="Space_Pioneer_Costs.html">Costs</a></li>
+  <li><a href="Space_Pioneer_Payment.html">Payment</a></li>
+  <li><a href="Space_Pioneer_News.html">News</a></li>
+  <li><a href="Space_Pioneer_Citations.html">Paperwork</a></li>
+</ul>
+
+</body>
+</html>
